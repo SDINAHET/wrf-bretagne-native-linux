@@ -27,3 +27,19 @@ wrf-bretagne-native-linux/
 ├── src/       # WRF/WPS source folders, ignored by Git
 └── docs/      # Documentation
 ```
+
+La prochaine étape en linux native:
+
+GFS NOAA
+   ↓
+ungrib
+   ↓
+metgrid
+   ↓
+✓ real.exe
+   ↓
+✓ wrf.exe
+   ↓
+wrfout
+   ↓
+Cartes météo Bretagne
