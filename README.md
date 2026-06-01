@@ -85,7 +85,7 @@ Build the first operational weather forecasting workflow.
 ```text
 HP EliteDesk 800 G2 SFF
 Intel Core i7
-40 GB RAM
+64 GB RAM
 GTX 1650
 ```
 
