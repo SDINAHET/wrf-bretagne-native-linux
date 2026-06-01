@@ -122,3 +122,6 @@ postgresql-client
 # Permet d'analyser les scripts Bash.
 # ------------------------------------------------------------
 shellcheck
+
+
+gh
