@@ -1,4 +1,4 @@
-# WRF Bretagne Native Linux
+# WRF Bretagne Native Linux 22.04
 
 Automated native Linux workflow for compiling and running **WRF/WPS** weather forecasts over Brittany using **GFS** data.
 
