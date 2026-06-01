@@ -1,0 +1,124 @@
+# ============================================================
+# APT REQUIREMENTS - Ubuntu 22.04 / Linux Mint
+# Projet : wrf-bretagne-native-linux
+# Objectif : WRF/WPS natif + GFS + cartes météo + futur frontend/API
+# Installation :
+#   sudo apt update
+#   xargs -a apt-requirements.txt sudo apt install -y
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. Base système et outils de compilation
+# Nécessaire pour compiler WRF/WPS et les bibliothèques natives.
+# ------------------------------------------------------------
+build-essential
+gcc
+g++
+gfortran
+make
+cmake
+m4
+perl
+csh
+tcsh
+pkg-config
+software-properties-common
+ca-certificates
+time
+
+# ------------------------------------------------------------
+# 2. Outils de travail en terminal
+# Utiles pour télécharger, inspecter, éditer et organiser le projet.
+# ------------------------------------------------------------
+git
+wget
+curl
+unzip
+zip
+tree
+vim
+nano
+htop
+
+# ------------------------------------------------------------
+# 3. MPI
+# Utilisé par WRF pour la compilation et l'exécution parallèle.
+# ------------------------------------------------------------
+mpich
+libmpich-dev
+
+# ------------------------------------------------------------
+# 4. NetCDF / HDF5
+# Indispensable pour lire/écrire les fichiers météo scientifiques.
+# WRF utilise fortement NetCDF.
+# ------------------------------------------------------------
+libnetcdf-dev
+libnetcdff-dev
+netcdf-bin
+libhdf5-dev
+hdf5-tools
+
+# ------------------------------------------------------------
+# 5. Compression, images et formats GRIB
+# Utilisé par WPS pour manipuler les données météo d'entrée.
+# ------------------------------------------------------------
+zlib1g-dev
+libpng-dev
+libjpeg-dev
+libjasper-dev
+libtiff-dev
+
+# ------------------------------------------------------------
+# 6. Outils météo / NetCDF / GRIB
+# Utiles pour diagnostiquer, convertir et inspecter les fichiers météo.
+# wgrib2 peut ne pas être disponible selon les dépôts Ubuntu.
+# ------------------------------------------------------------
+cdo
+nco
+# wgrib2
+
+# ------------------------------------------------------------
+# 7. Python scientifique
+# Utilisé pour lire les fichiers wrfout, générer les cartes et scripts.
+# ------------------------------------------------------------
+python3
+python3-pip
+python3-venv
+python3-dev
+
+# ------------------------------------------------------------
+# 8. Cartographie et géospatial
+# Utilisé pour les cartes météo, projections et couches géographiques.
+# ------------------------------------------------------------
+gdal-bin
+libgdal-dev
+proj-bin
+libproj-dev
+geos-bin
+libgeos-dev
+
+# ------------------------------------------------------------
+# 9. Export HTML couleur terminal
+# Permet d'exporter les dashboards Bash en HTML coloré.
+# ------------------------------------------------------------
+aha
+
+# ------------------------------------------------------------
+# 10. Frontend futur
+# Prévu pour une future interface web météo.
+# ------------------------------------------------------------
+nodejs
+npm
+
+# ------------------------------------------------------------
+# 11. API / backend futur
+# Prévu pour servir les cartes, fichiers ou résultats météo.
+# ------------------------------------------------------------
+sqlite3
+postgresql-client
+
+# ------------------------------------------------------------
+# 12. Qualité des scripts
+# Permet d'analyser les scripts Bash.
+# ------------------------------------------------------------
+shellcheck
