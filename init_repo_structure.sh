@@ -1,3 +1,16 @@
+#!/bin/bash
+set -e
+
+echo "=== Initialisation wrf-bretagne-native-linux ==="
+
+mkdir -p install run config scripts data logs docs src
+
+touch data/.gitkeep
+touch logs/.gitkeep
+touch src/.gitkeep
+
+
+cat > README.md << 'EOF'
 # WRF Bretagne Native Linux
 
 Automated native Linux workflow for compiling and running **WRF/WPS** weather forecasts over Brittany using **GFS** data.
@@ -26,4 +39,3 @@ wrf-bretagne-native-linux/
 ├── logs/      # Execution logs, ignored by Git
 ├── src/       # WRF/WPS source folders, ignored by Git
 └── docs/      # Documentation
-```

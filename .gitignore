@@ -216,3 +216,35 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Sources lourdes
+src/WRF/
+src/WPS/
+
+# Données météo
+data/gfs/
+data/geo/
+data/met/
+data/wrfout/
+
+# Logs
+logs/*.log
+
+# Fichiers WRF/WPS
+*.exe
+*.o
+*.mod
+*.nc
+*.grib2
+wrfout_*
+wrfrst_*
+wrfinput_*
+wrfbdy_*
+met_em.*
+GRIBFILE.*
+FILE:*
+
+# Système
+.DS_Store
+__pycache__/
+*.pyc
